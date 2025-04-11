@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Brilsin College</title>
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        nav {
+  background: #004080;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Contact Us</h1>
+    
+    <h2>Opening Hours</h2>
+    <div class="contact-info">
+        Sunday - Friday<br>
+        9AM - 5PM
+    </div>
+    
+    <hr>
+    
+    <h2>Address</h2>
+    <div class="contact-info">
+        Trade Tower, Thapathali<br>
+        Kathmandu, Nepal
+    </div>
+    
+    <hr>
+    
+    <h2>Contact</h2>
+    <div class="contact-info">
+        +977 (1) 9876543<br>
+        +977 1234567890<br>
+        info@thebritishscollege.edu.mp
+    </div>
+    
+    <hr>
+    
+    <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname">
+    </div>
+    
+    <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname">
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </div>
+    
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    
+    <div class="form-group">
+        <label for="course">Select Course</label>
+        <select id="course" name="course" size="1"> <!-- Added size attribute -->
+            <option value="">-- Please select --</option>
+            <option value="bbs">Bachelor of Business Administration (BBS)</option>
+            <option value="bcs">Bachelor of Computer Science (BCs)</option>
+            <option value="hm">Bachelor of Hospitality Management  (HM)</option>
+            <option value="mba">Master in Business Administration (MBA)</option>
+            <option value="msc">Master in Data Science</option>
+            <option value="mia">Master in Accountancy</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" required></textarea>
+        <div id="messageError" class="error"></div>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+    
+    <div class="map-container">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456030178004!2d85.31627731506203!3d27.7034353827939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sTrade%20Tower%20Thapathali!5e0!3m2!1sen!2snp!4v1620000000000!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</main>
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Trade Tower, Thapathali<br>
+        Kathmandu, Nepal</p>
+        <p>Phone: +977 (1) 5970003</p>
+        <p>Email: <a href="mailto:info@thebritishcollege.edu.np">info@thebritishcollege.edu.np</a></p>
+      </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Programs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+      <div class="copyright">
+        <p>&copy; 2023 The British College. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/slider.js"></script>
+    
+    <button type="submit">Submit</button>
+</body>
+</html>

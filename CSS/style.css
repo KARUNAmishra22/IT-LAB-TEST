@@ -1,0 +1,272 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
+nav {
+  background: #004080;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Programs Layout */
+.programs-container {
+  margin: 40px 0;
+}
+
+.programs-row {
+  display: flex;
+  gap: 30px;
+}
+
+.programs-column {
+  flex: 1;
+}
+
+.programme-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .programs-row {
+    flex-direction: column;
+  }
+  
+  .programs-column {
+    margin-bottom: 40px;
+  }
+}
+
+
+/* Link Styles */
+a:link { color: #0066cc; }
+a:visited { color:yellowgreen; }
+a:active { color: #cc0000; }
+a.external {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* Image Slider */
+.image-slider {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.image-slider img {
+  width: 30%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  width: 30%;
+  min-width: 300px;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h2 {
+  color: #003366;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.feature-box i {
+  margin-right: 10px;
+  color: #ffcc00;
+}
+/* Style for select dropdown */
+select {
+  font-size: 16px;  /* Base size for better readability */
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+}
+
+/* Style for dropdown options */
+select option {
+  font-size: 16px;
+  padding: 10px;
+  background: white;
+  color: #333;
+}
+
+/* For Firefox */
+@-moz-document url-prefix() {
+  select {
+      padding-right: 25px;
+  }
+}
+
+/* For IE11 */
+select::-ms-expand {
+  display: none;
+}
+
+/* Footer Styles */
+footer {
+  background: #002244;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-slider img {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-box {
+    width: 90%;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+  }
+}

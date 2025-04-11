@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        nav {
+            background: #004080;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Programmes Section */
+        .programmes-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .programs-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .programs-column {
+            flex: 1;
+        }
+
+        .programme-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .programme-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .programme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .programme-card h4 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .program-details {
+            width: 100%;
+            margin: 15px 0;
+            border-collapse: collapse;
+        }
+
+        .program-details th, 
+        .program-details td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #004080;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #004080;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .programs-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .programme-list {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <h1 class="section-title">UNLOCKING OPPORTUNITIES WITH OUR PROGRAMMES</h1>
+            
+            <section class="programs-container">
+                <!-- Undergraduate Programs Column -->
+                <div class="programs-column">
+                    <h2 id="undergraduate">Undergraduate Programs</h2>
+                    <div class="programme-list">
+                        <div class="programme-card">
+                            <h4>Bachelor of Business Administration</h4>
+                            <p>Develop leadership skills and business acumen for the modern corporate world.</p>
+                            <img src="images/business-1.jpg" alt="Undergraduate Photo 1" width="100%">
+                            <table class="program-details">
+                                <tr>
+                                    <th>Duration: </th>
+                                    <td>4 Years</td>
+                                </tr>
+                                <tr>
+                                    <th>Partner: </th>
+                                    <td>Leeds Beckett University</td>
+                                </tr>
+                                <tr>
+                                    <th>Intake: </th>
+                                    <td>January, May, September</td>
+                                </tr>
+                            </table>
+                            <a href="contact.html" class="btn">Enquire Now</a>
+                        </div>
+                        
+                        <div class="programme-card">
+                            <h4>Bachelor of Computer Science</h4>
+                            <p>Master cutting-edge technologies and software development methodologies.</p>
+                            <img src="images/computer-1.jpg" alt="Undergraduate Photo 2" width="100%">
+                            <table class="program-details">
+                                <tr>
+                                    <th>Duration: </th>
+                                    <td>4 Years</td>
+                                </tr>
+                                <tr>
+                                    <th>Partner: </th>
+                                    <td>University of West England</td>
+                                </tr>
+                                <tr>
+                                    <th>Intake: </th>
+                                    <td>January, May, September</td>
+                                </tr>
+                            </table>
+                            <a href="contact.html" class="btn">Enquire Now</a>
+                        </div>
+                        
+                        <div class="programme-card">
+                            <h4>Bachelor of Hospitality Management</h4>
+                            <p>Understand global economic systems and financial markets.</p>
+                            <img src="images/hm-1.jpg" alt="Undergraduate Photo 3" width="100%">
+                            <table class="program-details">
+                                <tr>
+                                    <th>Duration: </th>
+                                    <td>3.5 Years</td>
+                                </tr>
+                                <tr>
+                                    <th>Partner: </th>
+                                    <td>University of West England</td>
+                                </tr>
+                                <tr>
+                                    <th>Intake: </th>
+                                    <td>January, May, September</td>
+                                </tr>
+                            </table>
+                            <a href="contact.html" class="btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Postgraduate Programs Column -->
+                <div class="programs-column">
+                    <h2 id="postgraduate">Postgraduate Programs</h2>
+                    <div class="programme-list">
+                        <div class="programme-card">
+                            <h4>MBA - Master in Business Administration</h4>
+                            <p>Advanced business strategies for future executives and entrepreneurs.</p>
+                            <img src="images/masters business-1.jpg" alt="graduate Photo 1" width="100%">
+                            <table class="program-details">
+                                <tr>
+                                    <th>Duration: </th>
+                                    <td>2 Years</td>
+                                </tr>
+                                <tr>
+                                    <th>Partner: </th>
+                                    <td>Leeds Beckett University</td>
+                                </tr>
+                                <tr>
+                                    <th>Intake: </th>
+                                    <td>January, September</td>
+                                </tr>
+                            </table>
+                            <a href="contact.html" class="btn">Enquire Now</a>
+                        </div>
+                        
+                        <div class="programme-card">
+                            <h4>Master in Data Science</h4>
+                            <p>Specialize in big data analytics and machine learning applications.</p>
+                            <img src="images/masters data-1.jpg" alt="graduate Photo 2" width="100%">
+                            <table class="program-details">
+                                <tr>
+                                    <th>Duration: </th>
+                                    <td>2 Years</td>
+                                </tr>
+                                <tr>
+                                    <th>Partner: </th>
+                                    <td>University of West England</td>
+                                </tr>
+                                <tr>
+                                    <th>Intake: </th>
+                                    <td>January, September</td>
+                                </tr>
+                            </table>
+                            <a href="contact.html" class="btn">Enquire Now</a>
+                        </div>
+                        
+                        <div class="programme-card">
+                            <h4>Master in Accountancy</h4>
+                            <p>Develop and apply master's-level skills in accountancy, financial modelling, and corporate finance.</p>
+                            <img src="images/masters account-1.jpg" alt="graduate Photo 3" width="100%">
+                            <table class="program-details">
+                                <tr>
+                                    <th>Duration: </th>
+                                    <td>2 Years</td>
+                                </tr>
+                                <tr>
+                                    <th>Partner: </th>
+                                    <td>University of West England</td>
+                                </tr>
+                                <tr>
+                                    <th>Intake: </th>
+                                    <td>January, September</td>
+                                </tr>
+                            </table>
+                            <a href="contact.html" class="btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="fee-structure">
+                <h2>Fee Structure</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Program</th>
+                            <th colspan="2">Annual Fee (NPR)</th>
+                            <th rowspan="2">Total (NPR)</th>
+                        </tr>
+                        <tr>
+                            <th>Year 1</th>
+                            <th>Year 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BBA</td>
+                            <td>500,000</td>
+                            <td>450,000</td>
+                            <td>950,000</td>
+                        </tr>
+                        <tr>
+                            <td>BCS</td>
+                            <td>550,000</td>
+                            <td>500,000</td>
+                            <td>1,050,000</td>
+                        </tr>
+                        <tr>
+                            <td>MBA</td>
+                            <td>800,000</td>
+                            <td>750,000</td>
+                            <td>1,550,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Trade Tower, Thapathali<br>
+                Kathmandu, Nepal</p>
+                <p>Phone: +977 (1) 5970003</p>
+                <p>Email: <a href="mailto:info@thebritishcollege.edu.np">info@thebritishcollege.edu.np</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="programs.html">Programs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 The British College. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

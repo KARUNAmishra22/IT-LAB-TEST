@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBC Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+nav {
+  background: #004080;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+        /* Gallery Styles */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .gallery-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        
+        .event-section {
+            margin-bottom: 60px;
+        }
+        
+        .event-title {
+            font-size: 1.8rem;
+            color: #e74c3c;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .event-subtitle {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+        
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .photo-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .photo-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+ </header>
+    <div class="gallery-container">
+        <h1 class="gallery-title">TBC Gallery</h1>
+        
+        <!-- Career Fest Section -->
+        <div class="event-section">
+            <h2 class="event-title">TBC Career Fest 2024</h2>
+            <p class="event-subtitle">TBC Tihar Fest 2024</p>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="images/career-fest-1.jpg" alt="Career Fest 2024 Photo 1">
+                </div>
+                <div class="photo-item">
+                    <img src="images/career-fest-2.jpg" alt="Career Fest 2024 Photo 2">
+                </div>
+                <div class="photo-item">
+                    <img src="images/career-fest-3.jpg" alt="Career Fest 2024 Photo 3">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Graduation Section -->
+        <div class="event-section">
+            <h2 class="event-title">10th TBC Graduation Ceremony 2024</h2>
+            <p class="event-subtitle">5th British Cup</p>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="images/graduation-1.jpg" alt="Graduation 2024 Photo 1">
+                </div>
+                <div class="photo-item">
+                    <img src="images/graduation-2.jpg" alt="Graduation 2024 Photo 2">
+                </div>
+                <div class="photo-item">
+                    <img src="images/graduation-3.jpg" alt="Graduation 2024 Photo 3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Trade Tower, Thapathali<br>
+            Kathmandu, Nepal</p>
+            <p>Phone: +977 (1) 5970003</p>
+            <p>Email: <a href="mailto:info@thebritishcollege.edu.np">info@thebritishcollege.edu.np</a></p>
+          </div>
+    
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+          <div class="copyright">
+            <p>&copy; 2023 The British College. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="js/slider.js"></script>
+</body>
+</html>
